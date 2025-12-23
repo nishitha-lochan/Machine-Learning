@@ -1,0 +1,15 @@
+Logistic Regression is a supervised learning algorithm used for binary classification problems.
+
+It models the probability of a class using the sigmoid function, which maps any real value into a range between 0 and 1.
+
+The model computes:
+
+z=w⋅x+b
+
+and applies the sigmoid function to get the predicted probability. 
+
+A threshold (usually 0.5) is used to convert this probability into class labels 0 or 1.
+
+The model is trained by minimizing Binary Cross-Entropy (Log Loss) using Gradient Descent.
+
+Logistic regression works well for linearly separable data, is easy to interpret, and performs best for low-dimensional feature spaces, but it cannot model complex non-linear relationships without feature engineering.

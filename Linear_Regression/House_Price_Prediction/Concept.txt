@@ -1,0 +1,13 @@
+Linear Regression is a supervised learning algorithm used for predicting continuous values.
+It assumes a linear relationship between independent features and the target variable.
+
+The model is defined as:
+y = w·x + b,
+where w represents feature weights and b is the bias (intercept).
+
+Initially, weights and bias are initialized, and predictions are made.
+The error between predicted and actual values is calculated using Mean Squared Error (MSE).
+
+To minimize this loss, Gradient Descent is used, where weights and bias are updated iteratively using the learning rate until the loss is minimized.
+
+Linear regression is simple and interpretable but does not perform well for non-linear relationships and is sensitive to outliers.

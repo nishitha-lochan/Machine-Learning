@@ -1,0 +1,31 @@
+🔹 Support Vector Machine (SVM) — Summary
+
+Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification and regression, but it is mainly used for classification problems.
+
+The goal of SVM is to find the optimal hyperplane that separates data points of different classes with the maximum margin.
+
+Hyperplane: A decision boundary that separates classes
+
+Margin: Distance between the hyperplane and the nearest data points
+
+Support vectors: The data points closest to the hyperplane that define the margin
+
+SVM works by maximizing this margin, which helps improve generalization and reduces overfitting.
+
+If the data is linearly separable, SVM finds a straight-line (or plane) hyperplane.
+
+If the data is non-linearly separable, SVM uses kernel functions to project data into a higher-dimensional space where it becomes linearly separable.
+
+Common kernels:
+
+Linear
+
+Polynomial
+
+RBF (Gaussian)
+
+Sigmoid
+
+SVM uses a hinge loss function and a regularization parameter C, which controls the trade-off between maximizing the margin and minimizing classification errors.
+
+SVM performs well on high-dimensional data, is effective for small to medium datasets, but is computationally expensive for very large datasets.
