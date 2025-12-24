@@ -1,0 +1,111 @@
+#  K-Nearest Neighbors (KNN) :
+
+## Overview:
+**K-Nearest Neighbors (KNN)** is a **supervised, non-parametric, distance-based** algorithm used for **classification and regression**.
+
+- No explicit training phase
+- Predictions are based on nearest data points
+
+---
+
+## How KNN Works:
+1. Choose value of **K**
+2. Calculate distance between test point and all training points
+3. Select **K nearest neighbors**
+4. Predict:
+   - Classification → Majority vote
+   - Regression → Mean of neighbors
+
+---
+
+##  Distance Metrics:
+- Euclidean (default)
+- Manhattan
+- Minkowski
+- Cosine (high-dimensional data)
+
+---
+
+## Important Hyperparameters
+| Parameter | Description |
+|--------|------------|
+| `n_neighbors`| Number of neighbors (K) |
+| `weights` | `uniform` or `distance` |
+| `metric` | Distance metric |
+| `p` | Minkowski distance power |
+
+---
+
+##  Feature Scaling (MANDATORY)
+KNN is **distance-based**, so features must be scaled.
+
+Recommended:
+- `StandardScaler`
+- `MinMaxScaler`
+
+ Without scaling → incorrect neighbors
+
+---
+
+##  Overfitting & Underfitting
+- **Small K** → Overfitting (noise sensitive)
+- **Large K** → Underfitting (over-smoothed)
+
+Rule of thumb:
+K ≈ √n
+
+
+---
+
+##  Bias–Variance Tradeoff
+- Small K → Low bias, high variance
+- Large K → High bias, low variance
+
+---
+
+##  Advantages
+- Simple and intuitive
+- No training time
+- Handles non-linear patterns well
+
+---
+
+##  Disadvantages
+- Slow prediction
+- High memory usage
+- Sensitive to noise & outliers
+- Poor performance in high dimensions
+
+---
+
+##  When to Use KNN
+- Small datasets
+- Distance-based problems
+- Baseline model
+- Recommendation systems (basic)
+
+---
+
+##  KNN vs Decision Tree
+| KNN | Decision Tree |
+|----|--------------|
+| Lazy learner | Eager learner |
+| Distance-based | Rule-based |
+| Needs scaling | No scaling |
+| Slow prediction | Fast prediction |
+
+---
+
+## Interview Notes
+- “KNN is a lazy, instance-based learner.”
+- “Feature scaling is essential.”
+- “Small K causes overfitting.”
+- “KNN suffers from curse of dimensionality.”
+
+---
+
+##  Use Cases
+- Recommendation systems
+- Pattern recognition
+- Image classification (small datasets)
+- Anomaly detection
