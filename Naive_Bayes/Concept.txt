@@ -1,0 +1,76 @@
+# Naive Bayes Cheatsheet
+
+A quick reference for understanding and implementing **Naive Bayes** in machine learning projects.
+
+---
+
+##  Definition
+- **Naive Bayes (NB)**: Probabilistic classifier based on **Bayes’ theorem**.  
+- Assumes **features are independent** (“naive” assumption).  
+- Predicts the **most probable class** given input features.
+
+---
+
+##  Bayes’ Theorem
+
+             P(C∣X)=P(X)P(X∣C)⋅P(C)​
+
+Where:  
+C → class label
+X → feature vector
+P(C∣X) → posterior probability of class given features
+P(X∣C) → likelihood of features given class
+P(C) → prior probability of class
+P(X) → evidence (can ignore for classification)
+
+## 3️⃣ Types of Naive Bayes
+
+| Type             | Features       | Use Case |
+|-----------------|----------------|----------|
+| **GaussianNB**   | Continuous     | Numeric features (e.g., medical datasets) |
+| **MultinomialNB**| Count/discrete | Text classification (word counts, TF-IDF) |
+| **BernoulliNB**  | Binary (0/1)  | Text classification (presence/absence of words) |
+
+---
+## Advantages
+- Simple and fast  
+- Works well on **small datasets**  
+- Handles **high-dimensional data** efficiently  
+- Provides **probabilistic predictions**  
+
+---
+
+##  Limitations
+- Assumes **feature independence**  
+- Sensitive to correlated features  
+- Less effective for overlapping continuous data  
+
+---
+
+##  Python Implementation (scikit-learn)
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+# Train-test split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Feature scaling (optional for GaussianNB)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+# Train Gaussian Naive Bayes
+model = GaussianNB()
+model.fit(X_train, y_train)
+
+# Predict
+y_pred = model.predict(X_test)
+
+# Evaluate
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
