@@ -1,0 +1,90 @@
+What is a Decision Tree?
+
+-A Decision Tree is a supervised learning algorithm that splits data into smaller subsets based on feature conditions to make predictions.
+
+-Used for classification & regression
+
+-Works like a flowchart of decisions
+
+How it works (core idea):
+
+-Starts from the root node
+
+-Chooses the best feature + split
+
+-Recursively splits data
+
+-Stops at leaf nodes (final prediction)
+
+Split Criteria
+For Classification:
+
+Gini Impurity
+→ Measures how mixed the classes are
+
+Entropy (Information Gain)
+→ Measures information reduction after split
+
+For Regression:
+
+-Mean Squared Error (MSE)
+
+-Mean Absolute Error (MAE)
+
+Why Decision Trees Overfit?
+
+-Can grow very deep
+
+-Memorize noise & outliers
+
+-Low bias, high variance
+
+-Too many splits = poor generalization
+
+Key Hyperparameters 
+Parameter	Purpose:
+max_depth:	Limits tree depth (controls overfitting)
+min_samples_split:	Minimum samples to split a node
+min_samples_leaf:	Minimum samples in leaf node
+max_features:	Number of features to consider
+criterion:	Gini / Entropy
+
+How to Reduce Overfitting
+
+-Limit max_depth
+
+-Increase min_samples_leaf
+
+-Pruning
+
+-Use Random Forest
+
+-Use Gradient Boosting
+
+Advantages :
+
+-Easy to understand & explain
+
+-No feature scaling needed
+
+-Handles non-linear data
+
+-Works with categorical data
+
+Disadvantages :
+
+-Overfits easily
+
+-Unstable (small data change → big tree change)
+
+-Not good for extrapolation (regression)
+
+When to Use Decision :
+
+-When interpretability is important
+
+-Small to medium datasets
+
+-Non-linear relationships
+
+-Baseline model for ensembles
