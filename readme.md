@@ -1,10 +1,10 @@
-# Machine Learning Projects 🚀
+# Machine Learning Projects 
 
 This repository contains a collection of my **machine learning projects**, created as part of my learning and practice journey. The focus of this repository is on **machine learning algorithms, model building, evaluation, and implementations from scratch**.
 
 ---
 
-## 📌 What This Repository Covers
+##  What This Repository Covers
 
 - Machine Learning Algorithms
 - Feature Engineering (when required)
@@ -15,7 +15,7 @@ This repository contains a collection of my **machine learning projects**, creat
 
 ---
 
-## 🧠 Technologies & Tools Used
+##  Technologies & Tools Used
 
 - Python
 - NumPy
@@ -24,7 +24,8 @@ This repository contains a collection of my **machine learning projects**, creat
 - Scikit-learn
 - Jupyter Notebook
 - Git & GitHub
-# 📊 Algorithms Implemented
+
+#  Algorithms Implemented
 
 - Linear Regression
 - Logistic Regression
@@ -39,7 +40,7 @@ This repository contains a collection of my **machine learning projects**, creat
 
 ---
 
-## 🎯 Purpose of This Repository
+##  Purpose of This Repository
 
 - Build a strong foundation in machine learning
 - Understand ML algorithms at a deeper level
@@ -49,7 +50,7 @@ This repository contains a collection of my **machine learning projects**, creat
 
 ---
 
-## 🚀 Future Plans
+##  Future Plans
 
 - Advanced ML projects
 - Model optimization techniques
@@ -59,7 +60,7 @@ This repository contains a collection of my **machine learning projects**, creat
 
 ---
 
-## 🤝 Connect
+##  Connect
 
 Feel free to explore the projects, give feedback, or suggest improvements.
 
