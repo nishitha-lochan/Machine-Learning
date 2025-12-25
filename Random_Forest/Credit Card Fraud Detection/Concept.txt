@@ -1,0 +1,110 @@
+## What is Random Forest
+
+Random Forest is an ensemble machine learning algorithm that builds multiple decision trees using bagging and combines their predictions to improve accuracy and reduce overfitting.
+
+## Core Idea
+
+->Many uncorrelated decision trees together form a strong and stable model.
+
+## How Random Forest Works
+
+->Randomly samples data with replacement (bootstrap sampling)
+
+->Trains a decision tree on each sample
+
+->Uses a random subset of features at each split
+
+->Repeats the process for multiple trees
+
+->Combines predictions using majority voting (classification) or averaging (regression)
+
+## Why Random Forest
+
+->Reduces overfitting
+
+->Handles non-linear relationships
+
+->Works well with large datasets
+
+->Robust to noise and outliers
+
+->Provides feature importance
+
+# Limitations
+
+->Slower to train than a single decision tree
+
+->Less interpretable
+
+->High memory usage for many trees
+
+## Important Parameters
+->n_estimators
+
+Number of trees in the forest
+More trees usually improve performance but increase training time.
+
+->max_depth
+
+Maximum depth of each tree
+Controls overfitting.
+
+->max_features
+
+Number of features considered at each split
+Adds randomness and reduces correlation between trees.
+
+->min_samples_split
+
+Minimum number of samples required to split a node.
+
+->min_samples_leaf
+
+Minimum number of samples required at a leaf node.
+
+->class_weight
+
+Used to handle imbalanced datasets.
+Example: balanced
+
+->n_jobs
+
+Number of CPU cores used during training.
+-1 means use all cores.
+
+->random_state
+
+Controls randomness and ensures reproducible results.
+
+->Feature Importance
+
+Random Forest provides feature importance scores that indicate how much each feature contributes to the model’s predictions.
+
+->Evaluation Metrics
+
+Accuracy (not reliable for imbalanced data)
+Precision
+Recall
+F1-Score
+ROC-AUC
+Confusion Matrix
+
+## Random Forest vs Decision Tree
+
+Decision Tree easily overfits and is unstable.
+Random Forest reduces variance and provides better generalization.
+
+## Bagging vs Boosting
+
+Random Forest uses bagging where trees are trained independently.
+Boosting methods train models sequentially and focus on misclassified samples.
+
+# When to Use Random Forest
+
+Tabular datasets
+
+Non-linear relationships
+
+Medium to large datasets
+
+Strong baseline model requirement
